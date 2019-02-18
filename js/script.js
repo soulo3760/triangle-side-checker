@@ -1,12 +1,23 @@
-var opppo = parseInT(prompt(enter oppo:))
-var adj = parseINT(prompt(enter adj:))
-var hypo = parseINT(prompt(enter hypo:))
-if (oppo === adj && adj === hypo){
+function traingleside(){
+var opppo = parseInt(document.getElementById("oppo1").value);
+var adj = parseInt(document.getElementById("adj1").value);
+var hypo = parseInt(document.getElementById("hypo1").value);
+var sides=[];
+sides.push(opppo,adj,hypo);
+if (sides[0]+sides[1]<=sides[2]||sides[1]+sides[2]<= sides[0] ||sides[0]+sides[2]<=sides[1]
+{
+  alert ("try other values");
+}
+else if (sides [0] + sides[1] && sides[1] === sides[2] && sides [0]===sides [0])
   alert("traingle is equivalent")
 }
-else if (opp !=adj && adj !=hypo)  {
+else if (sides [0]+ sides [1]> sides [2]|| sides [2]+ sides [0]>sides [1]) || sides [2]+ sides [1]>sides [0])  {
   alert("triangle scalene")
 }
-else {
+else if (sides [0] === sides [1] || sides [1] === sides [2] || sides [0]===sides [2])  {
   (alert"isosceles")
+}
+else {
+  alert ("try again");
+}
 }
