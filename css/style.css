@@ -1,0 +1,8 @@
+
+div.triangle {
+  background-image: url(../images/blackpanter.jpeg);
+  background-repeat: repeat-y;
+  align-content: center;
+  background-position: center;
+  background-color: blue;
+}
