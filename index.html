@@ -3,8 +3,7 @@
   <head>
     <title> TRIANGLE ASSIGNMENT CALCULTOR</title>
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script language="Javascript" type="text/javascript">
-    <script src="script.js" charset="utf-8"></script>
+    <script src="js/script.js" charset="utf-8"></script>
   </head>
   <body>
     <div class="main">
@@ -12,12 +11,15 @@
     </div>
       <fieldset class="check">
   <h1> check the sides of triangle </h1>
-        <form class="entry-box" action="index.html"method="post">
+        <form class="entry-box">
   <div class="triangle">
-    <input type="number"name="oppo" placeholder="enter length of oppo" id="oppo1">
-    <input type="number"name="adj" placeholder="enter length of adj" id="adj1">
-    <input type="number"name="hypo1" placeholder="enter length of hypo" id="hypo1">
-      <button type="button" name"submit" value="submit" onclick="traingleside()">/<button type="button" name="button"> </button>
+ oppo1 side:&nbsp<br>
+    <input type="number"name="oppo" placeholder="enter length of oppo" id="oppo1"> <br>
+ adj1 side:&nbsp<br>
+    <input type="number"name="adj" placeholder="enter length of adj" id="adj1"><br>
+ hypo1 side:&nbsp<br>
+    <input type="number"name="hypo" placeholder="enter length of hypo" id="hypo1"><br>
+      <button onclick="traingleside()" >submit</button>
 <input type="reset" name="reset"value"clear fields">
   </div>
 </form>

@@ -4,18 +4,21 @@ var adj = parseInt(document.getElementById("adj1").value);
 var hypo = parseInt(document.getElementById("hypo1").value);
 var sides=[];
 sides.push(opppo,adj,hypo);
-if (sides[0]+sides[1]<=sides[2]||sides[1]+sides[2]<= sides[0] ||sides[0]+sides[2]<=sides[1]
+
+
+if (sides[0]+sides[1]<=sides[2]||sides[1]+sides[2]<= sides[0] ||sides[0]+sides[2]<=sides[1])
 {
   alert ("try other values");
 }
-else if (sides [0] + sides[1] && sides[1] === sides[2] && sides [0]===sides [0])
-  alert("traingle is equivalent")
+if (sides [0] ===sides[1] && sides[1] === sides[2] && sides [0]===sides [2])  {
+  alert("traingle is equivalent");
 }
-else if (sides [0]+ sides [1]> sides [2]|| sides [2]+ sides [0]>sides [1]) || sides [2]+ sides [1]>sides [0])  {
-  alert("triangle scalene")
+else if (sides [0]+ sides [1]> sides [2]|| sides [2]+ sides [0]>sides[1])
+{
+  alert("triangle scalene");
 }
 else if (sides [0] === sides [1] || sides [1] === sides [2] || sides [0]===sides [2])  {
-  (alert"isosceles")
+  alert("isosceles");
 }
 else {
   alert ("try again");
